@@ -5,6 +5,11 @@ const App: React.FC = () => {
   const [email, setEmail] = React.useState("");
   const [password, setPassword] = React.useState("");
 
+  const handleLogin: React.MouseEventHandler<HTMLButtonElement> = e => {
+    e.preventDefault();
+    console.log({email, password})
+  };
+
   return (
     <Container maxWidth="xs">
       <Card>
@@ -14,7 +19,7 @@ const App: React.FC = () => {
             <TextField id="email" label="Email" required fullWidth value={email} onChange={e => setEmail(e.target.value)} />
             <TextField id="password" label="Password" required type="password" fullWidth value={password} onChange={e => setPassword(e.target.value)} />
             <Box css={{ marginTop: 16 }}>
-              <Button fullWidth color="primary" type="submit">
+              <Button fullWidth color="primary" type="submit" onClick={handleLogin}>
                 Login
               </Button>
             </Box>

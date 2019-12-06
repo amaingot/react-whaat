@@ -50,7 +50,13 @@ const [password, setPassword] = React.useState("");
 <TextField id="email" label="Email" required fullWidth value={email} onChange={e => setEmail(e.target.value)} />
 <TextField id="password" label="Password" required type="password" fullWidth value={password} onChange={e => setPassword(e.target.value)} />
 ```
-
+ 8. Add an `onClick` handler for the login button:
+```
+  const handleLogin: React.MouseEventHandler<HTMLButtonElement> = e => {
+    e.preventDefault();
+    console.log({email, password})
+  };
+```
 
 
 ## Available Scripts
