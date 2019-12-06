@@ -5,8 +5,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## Tutorial
 > How to create this app from scratch.
 
- 1. Initialize the app by running `npx create-react-app basic-login --template typescript`
+ 1. Initialize the app: `npx create-react-app basic-login --template typescript`
  2. In a seperate terminal tab start the new app: `yarn start`
+ 3. Add [Material UI](https://material-ui.com/): `yarn add @material-ui/core`
 
 ## Available Scripts
 
