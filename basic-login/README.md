@@ -8,6 +8,38 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
  1. Initialize the app: `npx create-react-app basic-login --template typescript`
  2. In a seperate terminal tab start the new app: `yarn start`
  3. Add [Material UI](https://material-ui.com/): `yarn add @material-ui/core`
+ 4. In the `index.tsx` file, remove the reference to `index.css`. Also delete the following files:
+    1. `index.css`
+    2. `App.css`
+    3. `logo.svg`
+ 5. In the `App.tsx` file, replace the contents of the file with:
+```
+import React from "react";
+import { Container, Card, CardHeader, CardContent, TextField, Button, Box } from "@material-ui/core";
+
+const App: React.FC = () => {
+  return (
+    <Container maxWidth="xs">
+      <Card>
+        <CardHeader title="Login" />
+        <CardContent>
+          <form>
+            <TextField id="email" label="Email" required fullWidth />
+            <TextField id="password" label="Password" required type="password" fullWidth />
+            <Box css={{ marginTop: 16 }}>
+              <Button fullWidth color="primary" type="submit">
+                Login
+              </Button>
+            </Box>
+          </form>
+        </CardContent>
+      </Card>
+    </Container>
+  );
+};
+
+export default App;
+```
 
 ## Available Scripts
 

@@ -1,26 +1,25 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { Container, Card, CardHeader, CardContent, TextField, Button, Box } from "@material-ui/core";
 
 const App: React.FC = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Container maxWidth="xs">
+      <Card>
+        <CardHeader title="Login" />
+        <CardContent>
+          <form>
+            <TextField id="email" label="Email" required fullWidth />
+            <TextField id="password" label="Password" required type="password" fullWidth />
+            <Box css={{ marginTop: 16 }}>
+              <Button fullWidth color="primary" type="submit">
+                Login
+              </Button>
+            </Box>
+          </form>
+        </CardContent>
+      </Card>
+    </Container>
   );
-}
+};
 
 export default App;
