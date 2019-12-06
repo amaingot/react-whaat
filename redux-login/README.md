@@ -10,6 +10,11 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
  2. In a seperate terminal tab start the new app: `yarn start`
  3. Add all of the dependencies needed: `yarn add @material-ui/core redux react-redux axios`
  4. Copy over all of the files from the `basic-login/src/` folder (removing all css files).
+ 5. Create these four files:
+    1. `src/actions/index.ts`
+    2. `src/actions/AuthActions.ts`
+    3. `src/reducers/index.ts`
+    4. `src/reducers/AuthReducer.ts`
 
 ## Available Scripts
 
