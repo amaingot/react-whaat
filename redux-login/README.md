@@ -16,6 +16,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
     3. `src/reducers/index.ts`
     4. `src/reducers/AuthReducer.ts`
     5. `src/store.ts`
+  6. Setup your actions by copying over the code from the [AuthActions.ts](./src/actions/AuthActions.ts) file and the [actions/index.ts](./src/actions/index.ts) file.
+  7. 
 
 ## Available Scripts
 
