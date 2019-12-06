@@ -2,8 +2,8 @@ import React from "react";
 import { Container, Card, CardHeader, CardContent, TextField, Button, Box } from "@material-ui/core";
 
 const App: React.FC = () => {
-  const [email, setEmail] = React.useState("");
-  const [password, setPassword] = React.useState("");
+  const [email, setEmail] = React.useState(process.env["REACT_APP_DEFAULT_EMAIL"] || "");
+  const [password, setPassword] = React.useState(process.env["REACT_APP_DEFAULT_PASSWORD"] || "");
 
   const handleLogin: React.MouseEventHandler<HTMLButtonElement> = e => {
     e.preventDefault();
