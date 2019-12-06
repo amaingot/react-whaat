@@ -57,6 +57,18 @@ const [password, setPassword] = React.useState("");
     console.log({email, password})
   };
 ```
+ 9. Connect the login handler to a login endpoint by adding Axios as a dependency (run `yarn add axios`) and posting the username and password to the login endpoint:
+```
+  const handleLogin: React.MouseEventHandler<HTMLButtonElement> = async e => {
+    e.preventDefault();
+    const data = new FormData();
+    data.append("email", email);
+    data.append("password", password);
+    data.append("skip_captcha", "true");
+    const response = await axios.post(process.env["REACT_APP_LOGIN_ENDPOINT"] || "", data, { headers: { "Content-Type": "application/x-www-form-urlencoded" } });
+    console.log(response);
+  };
+```
 
 
 ## Available Scripts
