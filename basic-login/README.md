@@ -40,6 +40,18 @@ const App: React.FC = () => {
 
 export default App;
 ```
+ 6. Lets add a few hooks here now. Add the following lines inside the component function:
+```
+const [email, setEmail] = React.useState("");
+const [password, setPassword] = React.useState("");
+```
+ 7. Connect the text fields to use the new values in state. Update the props `value` and `onChange` to use the hooks:
+```
+<TextField id="email" label="Email" required fullWidth value={email} onChange={e => setEmail(e.target.value)} />
+<TextField id="password" label="Password" required type="password" fullWidth value={password} onChange={e => setPassword(e.target.value)} />
+```
+
+
 
 ## Available Scripts
 
