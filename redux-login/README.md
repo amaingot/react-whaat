@@ -8,7 +8,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
  1. Initialize the app: `npx create-react-app redux-login --template typescript`
  2. In a seperate terminal tab start the new app: `yarn start`
- 3. Add all of the dependencies needed: `yarn add @material-ui/core redux react-redux axios`
+ 3. Add all of the dependencies needed: `yarn add @material-ui/core redux react-redux axios` and `yarn add -D @types/react-redux`
  4. Copy over all of the files from the `basic-login/src/` folder (removing all css files).
  5. Create these four files:
     1. `src/actions/index.ts`
@@ -16,8 +16,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
     3. `src/reducers/index.ts`
     4. `src/reducers/AuthReducer.ts`
     5. `src/store.ts`
-  6. Setup your actions by copying over the code from the [AuthActions.ts](./src/actions/AuthActions.ts) file and the [actions/index.ts](./src/actions/index.ts) file.
-  7. 
+  6. Setup your actions by copying over the code from [AuthActions.ts](./src/actions/AuthActions.ts) and the [actions/index.ts](./src/actions/index.ts).
+  7. Setup your reducers by copying over the code from [AuthReducer.ts](./src/reducers/AuthReducers.ts) and [reducers/index.ts](./src/reducers/index.ts).
+  8. Setup your app store by copying [store.ts](./src/store.ts) and [hooks.ts](./src/hooks.ts)
 
 ## Available Scripts
 

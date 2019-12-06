@@ -15,12 +15,12 @@ interface LoginSuccessAction {
   payload: {
     token: string;
     jwt: string;
-    user: {
-      id: number;
-      email: string;
-      firstName: string;
-      lastName: string;
-    }
+    // user: {
+    //   id: number;
+    //   email: string;
+    //   firstName: string;
+    //   lastName: string;
+    // }
   }
 }
 
